@@ -8,6 +8,8 @@ const allowedChannelIDs =
     '919661849228771478'
 ]
 
+const pepegaId = '604659053398065178'
+
 const bot = new DiscordJS.Client
 ({
     intents:
@@ -21,11 +23,21 @@ bot.on('ready', () =>
 {
     console.log("El Patron byl zapnut.")
 
-    bot.user?.setActivity('ENDev', {type: 'WATCHING'});
+    bot.user?.setActivity('ENDev', {type: 'WATCHING'})
 })
 
 bot.on('messageCreate', (message) =>
 {
+    if (message.member?.id == pepegaId)
+    {
+        if (Math.floor(Math.random() * 10) == 7)
+        {
+            message.reply("STFU")
+        }
+
+        return;
+    }
+
     if (!allowedChannelIDs.includes(message.channelId)) return;
 
     switch (message.content.toLowerCase())
