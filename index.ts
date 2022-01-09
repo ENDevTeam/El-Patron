@@ -35,7 +35,9 @@ bot.on('messageCreate', (message) =>
             message.reply("STFU")
         }
 
-        return;
+        message.react("<:donowall:880138427855695872>")
+
+        return
     }
 
     if (!allowedChannelIDs.includes(message.channelId)) return;
@@ -44,7 +46,7 @@ bot.on('messageCreate', (message) =>
     {
         case "reee":
             message.reply("FOKIN NORMIES")
-            break;
+            break
     }
 })
 
