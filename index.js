@@ -1,6 +1,5 @@
 const { Client, Intents } = require('discord.js');
-const dotenv = require('dotenv');
-dotenv.config();
+const { token } = require('./config.json');
 
 const allowedChannelIDs = 
 [
@@ -50,4 +49,4 @@ bot.on('messageCreate', (message) =>
     }
 })
 
-bot.login(process.env.token);
+bot.login(token);
