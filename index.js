@@ -20,7 +20,7 @@ const bot = new Client
 
 bot.on('ready', () =>
 {
-    console.log("El Patron byl zapnut.");
+    console.log("El Patron was enabled.");
 
     bot.user.setActivity('ENDev', {type: 'WATCHING'});
 });
