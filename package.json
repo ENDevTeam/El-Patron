@@ -6,7 +6,7 @@
   "scripts":
   {
     "bot": "node index.js",
-    "auto": "nodemon index.js"
+    "debug": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
