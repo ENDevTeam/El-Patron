@@ -2,14 +2,17 @@
   "name": "bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "bot": "nodemon index.ts"
+  "main": "index.ts",
+  "scripts":
+  {
+    "bot": "ts-node index.ts",
+    "auto": "nodemon index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies":
+  {
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0",
     "nodemon": "^2.0.15",
