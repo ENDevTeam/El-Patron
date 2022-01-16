@@ -2,11 +2,11 @@
   "name": "bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts":
   {
-    "bot": "ts-node index.ts",
-    "auto": "nodemon index.ts"
+    "bot": "node index.js",
+    "auto": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
