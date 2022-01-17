@@ -27,9 +27,9 @@ bot.on('ready', () =>
 
 bot.on('messageCreate', (message) =>
 {
-    if (message.user.bot) return;
+    if (message.user?.bot) return;
 
-    if (message.member.id == pepegaId)
+    if (message.member?.id == pepegaId)
     {
         if (Math.floor(Math.random() * 10) == 7)
         {
