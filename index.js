@@ -49,6 +49,6 @@ bot.on('messageCreate', (message) =>
             message.reply("FOKIN NORMIES");
             break;
     }
-})
+});
 
 bot.login(token);
